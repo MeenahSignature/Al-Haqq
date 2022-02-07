@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Al-Haqq || Donation</title>
+		<!-- font awesome -->
+		<link
+			rel="stylesheet"
+			href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css"
+		/>
+		<!-- styles -->
+		<link rel="stylesheet" href="./styles.css" />
+	</head>
+	<body>
+		<!-- navbar -->
+		<nav id="nav">
+			<div class="nav-center">
+				<!-- nav header -->
+				<div class="nav-header">
+					<div class="logo-container">
+						<img src="./images/logoCut.png" alt="logo" class="logo" />
+						<div class="logo-info">
+							<h2>Al-Haqq</h2>
+							<h4>Prayer Group of Canada</h4>
+						</div>
+					</div>
+					<button class="nav-toggle">
+						<i class="fas fa-bars"></i>
+					</button>
+				</div>
+				<!-- links -->
+				<div class="links-container">
+					<ul class="links">
+						<li><a href="./index.html" class="scroll-link">home</a></li>
+						<li><a href="./about.html" class="scroll-link">about</a></li>
+						<li>
+							<a href="./activities.html" class="scroll-link">activities</a>
+						</li>
+						<li><a href="./events.html" class="scroll-link">events</a></li>
+						<li><a href="./contact.html" class="scroll-link">contact</a></li>
+						<li><a href="./careers.html" class="scroll-link">careers</a></li>
+					</ul>
+				</div>
+			</div>
+		</nav>
+
+		<!-- donation -->
+		<section class="section donation-section">
+			<div class="donation-heading">
+				<h3>donation information</h3>
+			</div>
+			<form>
+				<div class="section-center donation-container">
+					<!-- Donation purpose -->
+					<div class="donation-div">
+						<h3 class="input-heading">donate to</h3>
+						<div class="btn-container">
+							<button class="tab-btn active" data-id="general-operation">
+								general organization operation
+							</button>
+							<button class="tab-btn" data-id="masjid-project">
+								masjid project
+							</button>
+						</div>
+					</div>
+					<!-- Donation Amount -->
+					<div class="donation-div">
+						<h3 class="input-heading">donation amount</h3>
+						<div class="btn-container donation-amount">
+							<button class="tab-btn active" data-id="general-operation">
+								$20
+							</button>
+							<button class="tab-btn" data-id="masjid-project">$50</button>
+							<button class="tab-btn" data-id="goals">$100</button>
+							<!-- <input type="text"/> -->
+							<input
+								type="text"
+								class="form-control input-amount"
+								placeholder="$ Others"
+								data-id="goals"
+							/>
+						</div>
+					</div>
+					<!-- Donation Frequency -->
+					<div class="donation-div">
+						<h3 class="input-heading">donation frequency</h3>
+						<div class="btn-container">
+							<button class="tab-btn active" data-id="general-operation">
+								one-time
+							</button>
+							<button class="tab-btn" data-id="masjid-project">monthly</button>
+						</div>
+					</div>
+					<!-- Dedication -->
+					<div class="form">
+						<div class="dedication-container input-heading">
+							<label for="dedication">Dedication</label>
+							<input id="dedication" type="text" class="form-control" />
+						</div>
+					</div>
+					<!-- I am an -->
+					<div class="donation-div">
+						<p class="i-am-p">I am an</p>
+						<div class="btn-container">
+							<button class="tab-btn active" data-id="general-operation">
+								individual
+							</button>
+							<button class="tab-btn" data-id="masjid-project">
+								organization
+							</button>
+						</div>
+					</div>
+					<!-- personal information form -->
+					<div class="form-container">
+						<div class="dedication-container input-heading">
+							<label for="first-name">First Name</label>
+							<input id="first-name" type="text" class="form-control" />
+						</div>
+						<div class="dedication-container input-heading">
+							<label for="last-name">Last Name</label>
+							<input id="last-name" type="text" class="form-control" />
+						</div>
+						<div class="dedication-container input-heading">
+							<label for="email">Email</label>
+							<input id="email" type="email" class="form-control" />
+						</div>
+						<div class="dedication-container input-heading">
+							<label for="phone">Phone</label>
+							<input id="phone" type="text" class="form-control" />
+						</div>
+						<div class="dedication-container input-heading">
+							<label for="address">Address</label>
+							<input
+								id="address"
+								type="text"
+								class="form-control"
+								placeholder="Street"
+							/>
+							<input
+								id="address"
+								type="text"
+								class="form-control"
+								placeholder="unit"
+							/>
+							<div class="address-continue">
+								<input
+									id="address"
+									type="text"
+									class="form-control"
+									placeholder="city"
+								/>
+								<input
+									id="address"
+									type="text"
+									class="form-control"
+									placeholder="state/province"
+								/>
+								<input
+									id="address"
+									type="text"
+									class="form-control"
+									placeholder="postal/zip"
+								/>
+								<input
+									id="address"
+									type="text"
+									class="form-control"
+									placeholder="country"
+								/>
+							</div>
+							<div class="dedication-container input-heading">
+								<label for="message"
+									>message for al-haqq prayer group of canada</label
+								>
+								<textarea
+									class="form-control"
+									name="message"
+									id="message"
+									cols="30"
+									rows="7"
+								></textarea>
+							</div>
+							<div class="dedication-container payment-container">
+								<label for="phone">Payment Method</label>
+								<button class="btn stripe-btn">credit card</button>
+							</div>
+						</div>
+					</div>
+				</div>
+			</form>
+		</section>
+
+		<!-- footer -->
+		<footer class="footer">
+			<div class="section-center footer-center">
+				<h4 class="footer-text">
+					&copy;<span id="date"></span>
+					<span class="association">al-haqq prayer group of canada.</span>
+					all rights reserved
+				</h4>
+				<article class="social-icons">
+					<!-- social icon -->
+					<a href="#" class="social-icon">
+						<i class="fab fa-facebook"></i>
+					</a>
+					<!-- end of social icon -->
+					<!-- social icon -->
+					<a href="#" class="social-icon">
+						<i class="fab fa-twitter"></i>
+					</a>
+					<!-- end of social icon -->
+					<!-- social icon -->
+					<a href="#" class="social-icon">
+						<i class="fab fa-instagram"></i>
+					</a>
+					<!-- end of social icon -->
+					<!-- social icon -->
+					<a href="#" class="social-icon">
+						<i class="fab fa-pinterest"></i>
+					</a>
+					<!-- end of social icon -->
+				</article>
+			</div>
+		</footer>
+
+		<!-- javascript -->
+		<script src="./app.js"></script>
+	</body>
+</html>
